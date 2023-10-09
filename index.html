@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="wrapper text text--primary">
+    <header class="header wrapper__header">
+        <div class="row">
+            <img src="assets/images/logo.svg" alt="logo"/>
+            <div class="search-bar header__search-bar row">
+                <label>
+                    <input type="text" placeholder="Search">
+                </label>
+                <img src="assets/images/search-icon.svg" alt="logo"/>
+            </div>
+        </div>
+
+        <nav class="header__links-container row">
+            <a href="#">Home</a>
+            <a href="#">Clubs</a>
+        </nav>
+
+        <div class="header_action-panel row">
+            <button
+                    type="button"
+            >
+                <img src="assets/images/invite-friends-icon.svg" alt="invite friends icon"/>
+
+                Invite friends
+            </button>
+
+            <button
+                    type="button"
+            >
+                Create post
+            </button>
+
+            <button
+                    type="button"
+            >
+                <img src="assets/images/messages-icon.svg" alt="message icon"/>
+            </button>
+
+            <button
+                    type="button"
+            >
+                <img src="assets/images/notifications-icon.svg" alt="notifications icon"/>
+            </button>
+
+            <img src="assets/images/avatar-stub.png" alt="avatar"/>
+        </div>
+    </header>
+
+    <main class="chat-page wrapper__content">
+        <aside class="chat-page__sidebar chat-page-sidebar rows">
+            <div class="chat-page-sidebar__header row row--centered-y">
+                <h2 class="h2 text text--bold">Messages</h2>
+                <div class="chat-page-sidebar__unread-threads-badge text--strong text--small">0</div>
+            </div>
+
+            <div class="chat-page-sidebar__content thread-list">
+                <div class="thread-list__item thread-list__item--system thread thread__request">
+                    <div class="thread__image chat-avatar">
+                        <img src="/assets/images/requests-icon.svg" alt="requests"/>
+                    </div>
+                    <div class="thread__info thread-info">
+                        <div class="thread-info__heading">
+                            Requests
+                        </div>
+                        <div class="text text--secondary">
+                            3 requests
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thread-list__item thread">
+                    <div class="thread__image chat-avatar">
+                        <img src="/assets/images/user-avatar.png" alt="user avatar"/>
+                    </div>
+                    <div class="thread__info thread-info">
+                        <div class="row row--centered-y">
+                            <div class="thread-info__heading text text--bold">
+                                Joe Swanson
+                            </div>
+                            <div class="thread-info__divider"></div>
+                            <div class="text text--small">
+                                27 seconds ago
+                            </div>
+                        </div>
+                        <div class="thread-info__last-message thread-info__last-message--unread text text--small text--secondary">
+                            You didn't get any ice cream?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thread-list__item thread">
+                    <div class="thread__image chat-avatar">
+                        <img src="/assets/images/avatar-2.png" alt="user avatar"/>
+                    </div>
+                    <div class="thread__info thread-info">
+                        <div class="row row--centered-y">
+                            <div class="thread-info__heading text text--bold">
+                                Meg Griffin
+                            </div>
+                            <div class="thread-info__divider"></div>
+                            <div class="text text--small">
+                                Dec 7, 2022
+                            </div>
+                        </div>
+
+                        <div class="thread-info__role text text--small text--secondary">
+                            Sleeper Agent, Family Guy
+                        </div>
+
+                        <div class="thread-info__last-message text text--small text--secondary">
+                            You: Good Chris. I've taught you well. You...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="chat-page__content chat">
+            <div class="chat__header chat-header rows">
+                <div class="thread chat-header__thread">
+                    <div class="thread__image chat-avatar">
+                        <img src="/assets/images/avatar-2.png" alt="user avatar"/>
+                    </div>
+                    <div class="thread__info thread-info">
+                        <div class="row row--centered-y">
+                            <div class="thread-info__heading text text--bold">
+                                Meg Griffin
+                            </div>
+                            <div class="text text--small">
+                                @mmmeg
+                            </div>
+                        </div>
+
+                        <div class="thread-info__role text text--small text--secondary">
+                            Sleeper Agent, Family Guy
+                        </div>
+
+                        <div class="text text--small text--secondary">
+                            Agent 2476 is aware and is awaiting for instructions from our side. Please wait for us to
+                            call you.
+                        </div>
+                    </div>
+                    <button
+                            type="button"
+                            class="thread__action-btn"
+                    >
+                        <img src="assets/images/menu-icon.svg" alt="menu-icon">
+                    </button>
+                </div>
+
+                <div class="chat-header__info-banner info-banner row text text--small">
+                    <div class="info-banner__image">
+                        <img src="assets/images/avatar-stub.png" alt="question image stub"/>
+                    </div>
+                    <div class="info-banner__text">Hey Eric, have you collaborated with Eric yet?</div>
+                    <div class="row__spacer"></div>
+                    <div class="info-banner__actions">
+                        <button
+                                type="button"
+                        >
+                            Not yet
+                        </button>
+                        <button
+                                type="button"
+                        >
+                            Yes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat__content">
+                <div class="message-list rows">
+                    <div class="message-list__item message message--sent">
+                        <div class="message__text message__text--sent">
+                            So... question. How long has Stewie been unconcious?
+                        </div>
+                        <div class="message__date message__date--sent">April 23, 2023, 12:33 PM</div>
+                    </div>
+
+                    <div class="message-list__item message">
+                        <div class="message__text">
+                            Oh my god, Chris, he knows. Dad, I'm so sorry we should have told
+                            someone but we were too scared. I wanted to take him to the hospital, but Chris wouldn't let
+                            me.
+                        </div>
+                        <div class="message__date">April 23, 2023, 12:10 PM</div>
+                    </div>
+
+                    <div class="message-list__item message message--sent">
+                        <div class="message__text message__text--sent">
+                            Good Chris. I've taught you well. You have the right instincts. When
+                            you were babies, I used to knock you kids out every month or so. Some times by accident.
+                            Sometimes when the Patriots lost. You just gotta cover it up and everything works it self
+                            out. Meg, this is a list of hats. I need these by 4 o'clock.
+                        </div>
+                        <div class="message__date message__date--sent">April 23, 2023, 12:33 PM</div>
+                    </div>
+                </div>
+                <div class="chat-content__message-input message-input row">
+                    <textarea  placeholder="What would you like to say?" class="row__spacer"></textarea>
+
+                    <button
+                            type="button"
+                            class="message-input__send-btn"
+                    >
+                        <img src="assets/images/icon-send.svg" alt="icon send">
+                    </button>
+                </div>
+            </div>
+        </main>
+    </main>
+</div>
+</body>
+</html>
