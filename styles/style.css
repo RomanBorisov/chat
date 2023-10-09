@@ -34,26 +34,26 @@
 .text {
   line-height: 20px;
 }
+.text--strong {
+  font-weight: 600;
+}
 .text--bold {
   font-weight: 700;
 }
-.text--strong {
-  font-weight: 600;
+.text--xsmall {
+  font-size: 10px;
+}
+.text--small {
+  font-size: 12px;
+}
+.text--lsmall {
+  font-size: 14px;
 }
 .text--medium {
   font-size: 18px;
 }
 .text--large {
   font-size: 22px;
-}
-.text--xsmall {
-  font-size: 10px;
-}
-.text--lsmall {
-  font-size: 14px;
-}
-.text--xsmall {
-  font-size: 14px;
 }
 .text--primary {
   color: var(--text-color);
@@ -69,6 +69,26 @@ h2 {
 .h2 {
   font-size: 22px;
   line-height: 36px;
+}
+
+.button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+  appearance: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.button--reversed {
+  color: #FFFFFF;
+}
+.button--secondary {
+  color: rgba(255, 255, 255, 0.6980392157);
 }
 
 .thread-list {
@@ -104,10 +124,6 @@ h2 {
 .chat-page {
   display: flex;
   justify-content: center;
-}
-.chat-page__header {
-  max-width: 340px;
-  width: 100%;
 }
 
 .chat-page-sidebar {
